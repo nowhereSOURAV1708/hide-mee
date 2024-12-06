@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Blur Selected Area",
+  "version": "1.0",
+  "description": "Select an area of the screen and apply a blur effect.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
